@@ -19,13 +19,15 @@ app.use(function(req, res, next) {
 });
 app.use(helmet()); // secure module
 app.use(session({
-    secret: 'keyboard cat',
+    secret: 'cat',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: true },
-    genid: function(req) {
-        return genuuid() // use UUIDs for session IDs
-      },
+    key: 'sid',
+    cookie: {
+        path: '/',
+        httpOnly: true,
+        maxAge: null,
+    }
   }));
 //starting server
 app.listen(3012, function(){

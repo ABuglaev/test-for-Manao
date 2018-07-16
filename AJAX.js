@@ -1,9 +1,8 @@
 //Object with AJAX functions as methods
 //whatever i tried, but it seems impossible to send FormData object via fetch
 let AJAX = (function() {
-  
   let signInRequest = function() {
-    let formdata = new FormData(document.getElementById("signInForm"));
+let formdata = new FormData(document.getElementById("signInForm"));
     fetch(CONFIG.URLin, {  
       method: 'post',
       body: new URLSearchParams([...formdata]),
