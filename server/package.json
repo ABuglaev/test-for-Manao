@@ -1,0 +1,21 @@
+{
+  "name": "server_for_manao_test",
+  "version": "1.0.0",
+  "description": "local server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ABuglaev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "helmet": "^3.12.1",
+    "path": "^0.12.7",
+    "xml2js": "^0.4.19"
+  }
+}
